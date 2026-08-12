@@ -1,0 +1,22 @@
+{
+  "name": "quran-dictionary",
+  "private": true,
+  "version": "1.0.0",
+  "description": "আল-কুরআন ডিকশনারি — শব্দ ও গুরুত্বপূর্ণ আয়াতের ব্যাখ্যা, উপমা, বিজ্ঞান, প্রেক্ষাপট ও হাদিস রেফারেন্সসহ ইনস্টলযোগ্য PWA",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
+  }
+}
