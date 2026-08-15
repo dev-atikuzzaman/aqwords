@@ -57,6 +57,11 @@ export default function EntryModal({ entry, isFav, isLearned, onClose, onToggleF
                 <h3 className="font-display text-lg font-bold text-parchment-100 mt-1 leading-snug">{entry.title}</h3>
               </>
             )}
+            {!isWord && entry.arabic && (
+              <p className="font-arabic text-2xl text-gold-300 leading-[2.1] mt-3 text-right" dir="rtl" lang="ar">
+                {entry.arabic}
+              </p>
+            )}
             <div className="flex items-center gap-1.5 mt-2 flex-wrap">
               {cat && (
                 <span className={`font-ui text-[9px] px-2 py-0.5 rounded-full ring-1 ${cat.ring} ${cat.text} bg-ink-800`}>

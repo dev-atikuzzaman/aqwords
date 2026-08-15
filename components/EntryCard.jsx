@@ -33,6 +33,11 @@ export default function EntryCard({ entry, isFav, onOpen, onToggleFavorite }) {
         <>
           <p className="font-ui text-[10px] text-gold-400 tracking-wide">সূরা {entry.surah} · {entry.ref}</p>
           <p className="font-display text-sm font-semibold text-parchment-100 mt-1 leading-snug">{entry.title}</p>
+          {entry.arabic && (
+            <p className="font-arabic text-sm text-parchment-300 mt-1.5 line-clamp-2" dir="rtl">
+              {entry.arabic}
+            </p>
+          )}
         </>
       )}
 
